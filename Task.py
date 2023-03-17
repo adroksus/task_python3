@@ -24,3 +24,15 @@ else:
     print('Пам парам')
 
 
+
+# Задача 36.Создайте список из случайных чисел.
+# Найдите количество различных элементов в нем.
+
+a = input().split()
+sum_index = 0
+for i in range(0, len(a) - 1):
+    if int(a[i]) != int(a[i + 1]):
+        sum_index += 1
+print(sum_index + 1)
+
+
